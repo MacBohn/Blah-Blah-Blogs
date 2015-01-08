@@ -1,0 +1,20 @@
+
+
+
+<div class="menu4">
+  <h1>Blah Blah Blogs</h1>
+</div>
+<div class= "textfield">
+  <%= form_tag('/sign-in') do %>
+    <h2>Sign In</h2>
+    <%= label_tag :email %>
+    <br>
+    <%= text_field_tag :email, nil, class: "textbox" %>
+    <br><br>
+    <%= label_tag :password %>
+    <br>
+    <%= password_field_tag :password, nil, class: "textbox" %>
+    <br><br>
+    <%= submit_tag "Submit", class: "css_button" %>
+  <% end %>
+</div>
