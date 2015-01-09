@@ -2,26 +2,28 @@
   <h1>Blah Blah Blogs</h1>
 </div>
 <div class= "textfield">
+  <%= form_tag('/sign-in') do %>
   <h2>Sign Up</h2>
-  First Name
+  <%= label_tag :first_name %>
   <br>
-  <input class="textbox"type="text">
+  <%= text_field_tag :first_name ,nil ,class:"textbox" %>
   <br><br>
-  Last Name
+  <%= label_tag :last_name %>
   <br>
-  <input class="textbox"type="text">
+  <%= text_field_tag :last_name ,nil ,class:"textbox" %>
   <br><br>
-  Username
+  <%= label_tag :email %>
   <br>
-  <input class="textbox"type="text">
+  <%= text_field_tag :email ,nil ,class:"textbox" %>
   <br><br>
-  Password
+  <%= label_tag :password %>
   <br>
-  <input class="textbox"type="text">
+  <%= password_field_tag :password ,nil ,class:"textbox" %>
   <br><br>
-  Password Confirmation
+  <%= label_tag :last_name %>
   <br>
-  <input class="textbox"type="text">
+  <%= password_field_tag :last_name ,nil ,class:"textbox" %>
   <br><br>
-  <button class="css_button">Submit</button>
+  <%= submit_tag "Submit", class: "css_button" %>
+  <% end %>
 </div>
