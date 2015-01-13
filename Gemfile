@@ -13,6 +13,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'omniauth', '~> 1.2.2'
 gem 'omniauth-twitter', '~> 1.1.0'
+gem 'dotenv-rails', :groups => [:development, :test]
 
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
