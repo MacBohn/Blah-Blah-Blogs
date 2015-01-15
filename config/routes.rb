@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   post '/sign-in' => 'authentications#create'
   get '/about-us' => 'aboutus#index'
   get '/contact-us' => 'contactus#index'
+  get '/blog' => 'blog#index'
   get '/users' => 'users#new'
   get '/auth/twitter/callback' => "authentications#create"
   # The priority is based upon order of creation: first created -> highest priority.

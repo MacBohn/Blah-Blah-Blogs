@@ -1,0 +1,15 @@
+<div class="textfield">
+  <%= form_tag('/blog') do %>
+  <h2>Blogs</h2>
+  <%= label_tag :blog %>
+  <br>
+  CHOOSE A CATEGORY
+  <br><br>
+  <br>
+  <%= text_area_tag :blog,:'' , class:"textbox" %>
+  <br><br>
+  <%= submit_tag "Submit", class: "css_button" %>
+
+<% end %>
+
+</div>

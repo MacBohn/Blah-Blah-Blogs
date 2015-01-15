@@ -1,22 +1,22 @@
 <div class= "textfield">
-  <%= form_tag('/sign-up') do %>
+  <%= form_for(@user, url: sign_up_path) do |f| %>
   <h2>Sign Up</h2>
-  <%= label_tag :name %>
+  <%= f.label :name %>
   <br>
-  <%= text_field_tag :name ,nil ,class:"textbox" %>
+  <%= f.text_field :name, class:"textbox" %>
   <br><br>
-  <%= label_tag :nickname %>
+  <%= f.label :nickname %>
   <br>
-  <%= text_field_tag :nickname ,nil ,class:"textbox" %>
+  <%= f.text_field :nickname  ,class:"textbox" %>
   <br><br>
-  <%= label_tag :password %>
+  <%= f.label :password %>
   <br>
-  <%= password_field_tag :password ,nil ,class:"textbox" %>
+  <%= f.password_field :password  ,class:"textbox" %>
   <br><br>
-  <%= label_tag :password_confirmation %>
+  <%= f.label :password_confirmation %>
   <br>
-  <%= password_field_tag :password_confirmation ,nil ,class:"textbox" %>
+  <%= f.password_field :password_confirmation ,class:"textbox" %>
   <br><br>
-  <%= submit_tag "Submit", class: "css_button" %>
+  <%= f.submit "Submit", class: "css_button" %>
   <% end %>
 </div>

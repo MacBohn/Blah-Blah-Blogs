@@ -1,9 +1,9 @@
 h1{
-  color: red;
+  color: black;
   font-size: 50px;
 }
 h2{
-  color: red;
+  color: black;
   text-align: center;
   font-size: 35px;
 }
@@ -11,8 +11,12 @@ h3{
   color: #4099FF;
   font-size: 30px;
 }
-.textfield{
-  text-align: center;
+h4{
+  color: red;
+}
+.links{
+  font-size: 20px;
+
 }
 p{
   text-align: center;
@@ -22,12 +26,14 @@ p{
 .menu {
   text-align: center;
   border: 5px solid black;
-  background: #2EFE2E;
+background:-webkit-gradient(linear, 100% 20%, 10% 21%, from(#00FF00), to(#F9F9FF));
 }
 footer{
+  font-size: 20px;
+  height: 100%;
   text-align: center;
   border: 5px solid black;
-  background: #2EFE2E;
+  background:-webkit-gradient(linear, 100% 20%, 10% 21%, from(#00FF00), to(#005FFF))
 }
 ul{
   font-size: 18px;
@@ -44,9 +50,6 @@ ul{
   background: black;
 }
 
-footer{
-  height: 100%;
-}
 .textbox {
   text-align: center;
   background: white;
@@ -72,14 +75,15 @@ footer{
   background: -webkit-linear-gradient(90deg, #f2ab1e 5%, #f0c911 100%);
 }
 body{
-  background: yellow;
+  background: black;
 }
 .textfield{
+  text-align: center;
   border: 5px solid black;
   margin-left: 300px;
   margin-right: 300px;
   padding-bottom: 20px;
-  background: #8AD9FF;
+  background:-webkit-gradient(linear, 99% 20%, 10% 21%, from(#00FF00), to(#FF4E28));
 }
 
 
