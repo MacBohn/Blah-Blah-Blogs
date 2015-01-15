@@ -1,24 +1,21 @@
-<div class="menu4">
-  <h1>Blah Blah Blogs</h1>
-</div>
 <div class= "textfield">
-  <%= form_tag('/sign-in') do %>
+  <%= form_tag('/sign-up') do %>
   <h2>Sign Up</h2>
-  <%= label_tag :first_name %>
+  <%= label_tag :name %>
   <br>
-  <%= text_field_tag :first_name ,nil ,class:"textbox" %>
+  <%= text_field_tag :name ,nil ,class:"textbox" %>
   <br><br>
-  <%= label_tag :last_name %>
+  <%= label_tag :nickname %>
   <br>
-  <%= text_field_tag :last_name ,nil ,class:"textbox" %>
-  <br><br>
-  <%= label_tag :email %>
-  <br>
-  <%= text_field_tag :email ,nil ,class:"textbox" %>
+  <%= text_field_tag :nickname ,nil ,class:"textbox" %>
   <br><br>
   <%= label_tag :password %>
   <br>
   <%= password_field_tag :password ,nil ,class:"textbox" %>
+  <br><br>
+  <%= label_tag :password_confirmation %>
+  <br>
+  <%= password_field_tag :password_confirmation ,nil ,class:"textbox" %>
   <br><br>
   <%= submit_tag "Submit", class: "css_button" %>
   <% end %>

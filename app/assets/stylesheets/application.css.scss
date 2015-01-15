@@ -7,25 +7,43 @@ h2{
   text-align: center;
   font-size: 35px;
 }
+h3{
+  color: #4099FF;
+  font-size: 30px;
+}
 .textfield{
   text-align: center;
 }
+p{
+  text-align: center;
+  font-size: 30px;
+}
+
 .menu {
   text-align: center;
-  border: 5px solid green;
-  background: #8AD9FF;
+  border: 5px solid black;
+  background: #2EFE2E;
 }
- footer{
+footer{
   text-align: center;
-  border: 5px solid green;
-  background: #8AD9FF;
+  border: 5px solid black;
+  background: #2EFE2E;
 }
 ul{
   font-size: 18px;
 }
-a{
-  padding: 60px;
+
+.notice{
+  padding: 5px;
+  color: red;
+  text-align: center;
+  font-size: 40px;
+  border: 4px dotted white;
+  margin-left: 300px;
+  margin-right: 300px;
+  background: black;
 }
+
 footer{
   height: 100%;
 }
@@ -39,10 +57,6 @@ footer{
   outline: none;
   height:23px;
   width: 275px;
-}
-p{
-  text-align: center;
-  font-size: 30px;
 }
 .css_button {
   font-size: 24px;
@@ -61,7 +75,7 @@ body{
   background: yellow;
 }
 .textfield{
-  border: 5px solid green;
+  border: 5px solid black;
   margin-left: 300px;
   margin-right: 300px;
   padding-bottom: 20px;

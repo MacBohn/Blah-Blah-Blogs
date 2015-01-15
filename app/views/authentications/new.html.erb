@@ -1,12 +1,9 @@
-<div class="menu">
-  <h1>Blah Blah Blogs</h1>
-</div>
 <div class= "textfield">
   <%= form_tag('/sign-in') do %>
-    <h2>Sign In</h2>
-    <%= label_tag :email %>
+    <h2>Sign In </h2>
+    <%= label_tag :nickname %>
     <br>
-    <%= text_field_tag :email, nil, class: "textbox" %>
+    <%= text_field_tag :nickname, nil, class: "textbox" %>
     <br><br>
     <%= label_tag :password %>
     <br>
@@ -14,4 +11,6 @@
     <br><br>
     <%= submit_tag "Submit", class: "css_button" %>
   <% end %>
+  <h2>Or</h2>
+  <h2><%= link_to "Sign In with Twiter", "/auth/twitter" %></h2>
 </div>

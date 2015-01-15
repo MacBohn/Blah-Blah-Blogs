@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   root "pages#index"
-  get '/sign-up' => 'registrations#new', as: :signup
+  get '/sign-up' => 'registrations#new', as: :sign_up
   post '/sign-up' => 'registrations#create'
+  get '/sign-out' => 'authentications#destroy', as: :signout
   get '/sign-in' => 'authentications#new', as: :signin
   post '/sign-in' => 'authentications#create'
   get '/about-us' => 'aboutus#index'
