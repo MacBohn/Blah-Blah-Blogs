@@ -14,9 +14,26 @@ h3{
 h4{
   color: red;
 }
-.links{
+.links {
+  background: yellow;
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  border: 5px solid blue;
+  border-radius: 50px;
+}
+.links a {
   font-size: 20px;
-
+  display: inline-block;
+  margin: 0px 40px;
+  padding: 10px;
+}
+.btn {
+  background: red;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
 }
 p{
   text-align: center;
@@ -25,14 +42,16 @@ p{
 
 .menu {
   text-align: center;
-  border: 5px solid black;
-background:-webkit-gradient(linear, 100% 20%, 10% 21%, from(#00FF00), to(#F9F9FF));
+  border: 5px solid blue;
+  border-radius: 100px;
+  background:-webkit-gradient(linear, 100% 20%, 10% 21%, from(#00FF00), to(#F9F9FF));
 }
 footer{
   font-size: 20px;
   height: 100%;
   text-align: center;
-  border: 5px solid black;
+  border: 5px solid blue;
+  border-radius: 100px;
   background:-webkit-gradient(linear, 100% 20%, 10% 21%, from(#00FF00), to(#005FFF))
 }
 ul{
@@ -79,7 +98,8 @@ body{
 }
 .textfield{
   text-align: center;
-  border: 5px solid black;
+  border: 5px solid blue;
+  border-radius: 100px;
   margin-left: 300px;
   margin-right: 300px;
   padding-bottom: 20px;
