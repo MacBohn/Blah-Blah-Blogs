@@ -4,12 +4,13 @@ Rails.application.routes.draw do
   post '/sign-up' => 'registrations#create'
   get '/sign-out' => 'authentications#destroy', as: :signout
   get '/sign-in' => 'authentications#new', as: :signin
-  post '/sign-in' => 'authentications#create'
+  post '/sign-in' => 'sessions#create'
   get '/about-us' => 'aboutus#index'
   get '/contact-us' => 'contactus#index'
   get '/blog' => 'blog#index'
   get '/users' => 'users#new'
   get '/auth/twitter/callback' => "authentications#create"
+  get '/application' => 'layouts#application.html.erb'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

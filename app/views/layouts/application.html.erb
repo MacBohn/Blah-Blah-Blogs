@@ -5,78 +5,65 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand", <%= link_to "Blah Blah Blogs", root_path  %></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right">
+          <% if current_user %>
+          <button><%= link_to "Friends", users_path %></button>
+          <button><%= link_to "Blog", blog_path  %></button>
+          <button><%= link_to "Sign Out", signout_path  %></button>
+          <% else %>
+          <button><%= link_to "Sign In", signin_path %></button>
+          <button><%= link_to "Sign Up", sign_up_path %></button>
+          <% end %>
+        </form>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </nav>
+
+  <br><br><br>
+  <div class="menu">
+    <h1><img src=""/>Blah Blah Blogs</h1>
+    <% if current_user != nil %>
+    <% if Authentication.find_by(:user_id => current_user.id) %>
+    <h3><img src="http://www.nmra2015portland.org/sites/default/files/images/twitter_logo_40x40.png"/>witter handle: <%= current_user.nickname %></h3>
+    <br>
+    <% else %>
+    <h3>Nickname: <%= current_user.nickname %></h3>
+    <% end %>
+    <% else %>
+    <h4>NO USER LOGGED IN<h4>
+      <% end %>
+    </div>
+    <% if notice.present? %>
+    <div class="notice">
+      <%= notice %>
+    </div>
+    <% end %>
+  </head>
+  <br>
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
+    <%= yield %>
 
-
-
-    <% if current_user %>
-    <%= link_to "Friends", users_path %>
-    <%= link_to "Blog", blog_path, class: "btn" %>
-    <%= link_to "Sign Out", signout_path, class: "btn" %>
-    <% else %>
-    <%= link_to "Sign In", signin_path, class: "btn" %>
-    <%= link_to "Sign Up", sign_up_path, class: "btn" %>
-    <% end %>
-
+  </body>
+  <br>
+  <footer>
     <br>
-    <div class="container">
-      <div class="menu">
-        <h1><img src=""/>Blah Blah Blogs</h1>
-        <% if current_user != nil %>
-        <% if Authentication.find_by(:user_id => current_user.id) %>
-        <h3><img src="http://www.nmra2015portland.org/sites/default/files/images/twitter_logo_40x40.png"/>witter handle: <%= current_user.nickname %></h3>
-        <% else %>
-        <h3>Nickname: <%= current_user.nickname %></h3>
-        <% end %>
-        <% else %>
-        <h4>NO USER LOGGED IN<h4>
-          <% end %>
-        </div>
-        <% if notice.present? %>
-        <div class="notice">
-          <%= notice %>
-        </div>
-        <% end %>
-      </head>
-      <br>
-
-      <%= yield %>
-
-    </body>
-    <br>
-    <footer>
-      <br>
-      <%= link_to "Home", root_path, class:"btn" %>
-      <%= link_to "Contact Us", contact_us_path, class: "btn" %>
-      <%= link_to "About Us", about_us_path, class: "btn" %>
-      <p>
-        Created by Mac Daddy
-      </p>
-    </footer>
-  </div>
+    <button><%= link_to "Home", root_path %> </button>
+    <button><%= link_to "Contact Us", contact_us_path %></button>
+    <button><%= link_to "About Us", about_us_path %></button>
+    <p> Created by Mac Daddy</p>
+  </footer>
   </html>
