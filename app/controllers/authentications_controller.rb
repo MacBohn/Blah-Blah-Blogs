@@ -1,5 +1,6 @@
 class AuthenticationsController < ApplicationController
   def create
+
     twitter_auth_hash = request.env["omniauth.auth"]
     # determine if user exists with the nickname/name from twitter_auth
     user = User.find_by(nickname: twitter_auth_hash[:nickname])

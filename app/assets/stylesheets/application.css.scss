@@ -5,6 +5,7 @@
 h1{
   color: black;
   font-size: 50px;
+  text-align: center;
 }
 h2{
   color: black;
@@ -34,6 +35,10 @@ h4{
 
 form{
   text-align: center;
+}
+.form-control{
+  margin-left: 290px;
+width: 30%;
 }
 
 .btn {
@@ -105,7 +110,12 @@ ul{
   background: black;
 }
 body{
-  background: black;
+background-color:rgb(0,0,0);
+background-image:url();
+background-position:top left;
+background-repeat:repeat;
+background-attachment:fixed;
+
 }
 .textfield{
   text-align: center;
@@ -123,6 +133,7 @@ button{
   padding: 10px;
   font-size: 20px;
   margin-left:10px;
+  border-radius: 20px 20px 20px 20px;
 }
 
 button:hover{
