@@ -1,14 +1,13 @@
-<div class="textfield">
-  <%= form_for @post do |f| %>
-  <h2>Post a Blog</h2>
-  <h3><%= f.label :Category %></h3>
-  <%= collection_select(:post, :user_id, Category.all, :id, :category, {include_blank: "Please choose a category" }, {class: "form-control"}) %>
+
+
+
+
+<div class = "textfield">
+  <% @posts.each do |post| %>
+  <h3>Title </h3>
+  <p><%= post.title %></p>
+  <h3>Body </h3>
+  <p><%= post.body %></p>
   <br>
-  <h3><%= f.label :Title %></h3>
-  <%= f.text_area :title, :rows => 1, :cols => 75, :placeholder => "The Title of your Blog goes here" %>
-  <h3><%= f.label :Body %></h3>
-  <%= f.text_area :body, :rows => 10, :cols => 75, :placeholder => "Your contnet of your Blog goes here" %>
-  <br><br>
-  <%= f.submit "Submit", class: "css_button" %>
   <% end %>
 </div>

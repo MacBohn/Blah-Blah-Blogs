@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   def index
+    @posts = Post.all
     @post =Post.new
   end
 
@@ -7,7 +8,7 @@ class PostsController < ApplicationController
   def create
     @post= Post.new(post_params)
     @post.save
-    redirect_to blog_path
+    redirect_to posts_path
   end
 
   def post_params

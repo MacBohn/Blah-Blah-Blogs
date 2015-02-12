@@ -13,14 +13,3 @@
   <%= f.submit "Submit", class: "css_button" %>
   <% end %>
 </div>
-<br>
-<div class = "textfield">
-  <% @posts.each do |post| %>
-  <p><%= post.category %></p>
-  <h3>Title </h3>
-  <p><%= post.title %></p>
-  <h3>Body </h3>
-  <p><%= post.body %></p>
-  <br>
-  <% end %>
-</div>
