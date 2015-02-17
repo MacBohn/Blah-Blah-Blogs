@@ -17,6 +17,7 @@
           <% if current_user %>
           <button><%= link_to "Blog", blog_path %></button>
           <button><%= link_to "Sign Out", signout_path  %></button>
+          <button><%= link_to "Posts", posts_path %></button>
           <% else %>
           <button><%= link_to "Sign In", signin_path %></button>
           <button><%= link_to "Sign Up", sign_up_path %></button>
@@ -58,7 +59,6 @@
     <nav class="navbar navbar-inverse navbar-fixed">
       <div id="navbar" class="navbar-collapse collapse">
         <form class="navbar-form navbar">
-          <button><%= link_to "Home", root_path %> </button>
           <button><%= link_to "Contact Us", contact_us_path %></button>
           <button><%= link_to "About Us", about_us_path %></button>
           <p> Created by Mac Daddy</p>

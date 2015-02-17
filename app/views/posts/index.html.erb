@@ -1,11 +1,14 @@
 
 <div class = "textfield">
   <% @posts.each do |post| %>
-  <h3>Title </h3>
+  <h3>Blogs </h3>
   <p id = "title"><%= post.title %></p>
-  <h3>Body </h3>
   <p id = "body"><%= post.body %></p>
-  <p id = "title"> Created at:<%= post.created_at %></p>
-  <br>
+
+  <% if post.category %> 
+  <%= post.category.category %>
+  <% end %>
+
   <% end %>
 </div>
+<br>
