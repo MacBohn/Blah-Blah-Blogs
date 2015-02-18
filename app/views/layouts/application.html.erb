@@ -9,18 +9,18 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header-center">
-        <a class="navbar-brand", <%= link_to "Blah Blah Blogs", root_path  %></a>
+        <a class="navbar-brand", <%= link_to "Blah Blah Blogs", root_path %></a>
 
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <form class="navbar-form navbar-right">
           <% if current_user %>
-          <button><%= link_to "Blog", blog_path %></button>
-          <button><%= link_to "Sign Out", signout_path  %></button>
-          <button><%= link_to "Posts", posts_path %></button>
+          <%= link_to "Blog", blog_path, class: "btn btn-primary" %>
+          <%= link_to "Sign Out", signout_path, class: "btn btn-primary" %>
+          <%= link_to "Posts", posts_path, class: "btn btn-primary", class: "btn btn-primary" %>
           <% else %>
-          <button><%= link_to "Sign In", signin_path %></button>
-          <button><%= link_to "Sign Up", sign_up_path %></button>
+          <%= link_to "Sign In", signin_path, class: "btn btn-primary" %>
+          <%= link_to "Sign Up", sign_up_path, class: "btn btn-primary" %>
           <% end %>
         </form>
       </div><!--/.navbar-collapse -->
@@ -29,10 +29,12 @@
 
   <br><br><br>
   <div class="menu">
-      <h1>Blah Blah Blogs</h1>
+    <h1>Blah Blah Blogs</h1>
     <% if current_user != nil %>
     <% if Authentication.find_by(:user_id => current_user.id) %>
-    <h3><img src="http://www.nmra2015portland.org/sites/default/files/images/twitter_logo_40x40.png"/>witter handle: <%= current_user.nickname %></h3>
+    <div class="twitter">
+      <h3>Twitter handle: <%= current_user.nickname %></h3>
+    </div>
     <br>
     <% else %>
     <h3>Nickname <%= current_user.nickname %></h3>
@@ -59,8 +61,8 @@
     <nav class="navbar navbar-inverse navbar-fixed">
       <div id="navbar" class="navbar-collapse collapse">
         <form class="navbar-form navbar">
-          <button><%= link_to "Contact Us", contact_us_path %></button>
-          <button><%= link_to "About Us", about_us_path %></button>
+          <%= link_to "Contact Us", contact_us_path, class: "btn btn-primary" %>
+          <%= link_to "About Us", about_us_path, class: "btn btn-primary" %>
           <p> Created by Mac Daddy</p>
         </form>
       </div>

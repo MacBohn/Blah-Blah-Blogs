@@ -2,12 +2,12 @@
 <div class="textfield">
   <%= form_for @post do |f| %>
   <h2>Post a Blog</h2>
-  <h3><%= f.label :category_id %></h3>
+  <h4><%= f.label :category_id %></h4>
   <%= f.collection_select(:category_id, Category.all, :id, :category, {include_blank: "Please choose a category" }, {class: "form-control"}) %>
   <br>
-  <h3><%= f.label :title %></h3>
+  <h4><%= f.label :title %></h4>
   <%= f.text_area :title, :rows => 1, :cols => 75, :placeholder => "The Title of your Blog goes here" %>
-  <h3><%= f.label :body %></h3>
+  <h4><%= f.label :body %></h4>
   <%= f.text_area :body, :rows => 10, :cols => 75, :placeholder => "Your contnet of your Blog goes here" %>
   <br><br>
   <%= f.submit "Submit", class: "css_button" %>

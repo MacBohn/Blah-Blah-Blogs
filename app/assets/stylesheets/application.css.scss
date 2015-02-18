@@ -6,6 +6,7 @@ h1{
   color: black;
   font-size: 50px;
   text-align: center;
+  font-family: cursive;
 }
 h2{
   color: black;
@@ -14,34 +15,38 @@ h2{
 }
 
 h3{
-  font-size: 30px;
+  font-size: 35px;
 }
 h4{
-  color: red;
+  font-size: 30px;
 }
 .navbar-inverse{
   background:-webkit-gradient(linear, 99% 20%, 10% 21%, from(#00FF00), to(#FF4E28));
   border: 2px solid white;
 
 }
+.twitter{
+  border: 3px solid white;
+  background: black;
+  margin-left: 400px;
+  margin-right: 400px;
+  border-radius: 20px;
+  color: #0DBEDE;
+}
 
 form{
   text-align: center;
 }
+
 .form-control{
   margin-left: 290px;
-width: 30%;
+  width: 30%;
 }
 
-.btn {
-  background: red;
-  border: 1px solid black;
-  padding: 10px;
-  border-radius: 5px;
-  color: black;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-right: 10px;
+.btn{
+  font-family: cursive;
+  font-size: 20px;
+  background: black;
 }
 p{
   text-align: center;
@@ -92,52 +97,53 @@ ul{
   font-size: 24px;
   font-family: Comic Sans MS;
   border-radius: 16px 16px 16px 16px;
-  border: 3px solid #e65f44;
+  border: 3px solid white;
   padding: 9px 24px;
-  text-shadow: 1px 1px 0px #ded17c;
-  box-shadow: inset 1px 1px 0px 0px #f9eca0;
+  text-shadow: 1px 1px 0px white;
+  box-shadow: inset 1px 1px 0px 0px white;
   cursor: pointer;
-  color: #c92200;
+  color: white;
   display: inline-block;
   background: black;
 }
 body{
-background-color:rgb(0,0,0);
-background-image:url();
-background-position:top left;
-background-repeat:repeat;
-background-attachment:fixed;
+  background-color:rgb(0,0,0);
+  background-image:url();
+  background-position:top left;
+  background-repeat:repeat;
+  background-attachment:fixed;
 
 }
 .textfield{
   border-radius: 5px;
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 250px;
+  margin-right: 250px;
   margin-bottom: 10px;
   padding: 20px 40px;
   border: 2px solid white;
   background:-webkit-gradient(linear, 99% 20%, 10% 21%, from(#00FF00), to(#FF4E28));
 }
 
-button{
-  background: black;
-  border: 1px solid black;
-  padding: 10px;
-  font-size: 20px;
-  margin-left:10px;
-  border-radius: 20px;
+.textfield1{
+  border-radius: 5px;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-bottom: 10px;
+  padding: 20px 40px;
+  border: 2px solid white;
+  background:-webkit-gradient(linear, 99% 20%, 10% 21%, from(#00FF00), to(#FF4E28));
 }
 
 .navbar-brand{
   font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
+  color:white;
   border: 2px solid black;
   padding: 10px;
+  border-radius: 10px;
   background: black;
-}
-button:hover{
-  background: transparent;
+  font-family: cursive;
 }
 
 #title{
@@ -162,8 +168,41 @@ button:hover{
   margin-right: 400px;
 }
 
+img{
+  margin-bottom: 20px;
+  border-radius: 100px;
+  border: 3px solid white;
+}
 
+input[type="text"], textarea {
 
+  background-color : black;
+  color: white;
+  font-size: 20px;
+
+}
+
+.form-control{
+  background: black;
+  color: white;
+}
+#header{
+  color: black;
+  text-align: center;
+  background: white;
+  margin: 0px 400px 10px 400px;
+  font-family: cursive;
+  font-size: 50px;
+  border-radius: 20px;
+
+}
+#category{
+  color: white;
+}
+
+.contact{
+  float: left;
+}
 
 
 /*

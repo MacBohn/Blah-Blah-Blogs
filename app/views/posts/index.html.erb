@@ -1,9 +1,10 @@
-  <h3>Posts </h3>
+  <h3 id="header">Posts </h3>
 
 <div class="category">
+  <h3 id="category">Categories</h3>
   <%= link_to "All", posts_path %>
 <% Category.all.each do |category| %>
-  <%=link_to category.category, posts_path(category_id: category.id) %>|
+  |<%=link_to category.category, posts_path(category_id: category.id) %>
 <% end %>
 </div>
 
