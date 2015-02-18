@@ -1,14 +1,21 @@
+  <h3>Posts </h3>
 
+<div class="category">
+  <%= link_to "All", posts_path %>
+<% Category.all.each do |category| %>
+  <%=link_to category.category, posts_path(category_id: category.id) %>|
+<% end %>
+</div>
+
+
+<% @posts.each do |post| %>
 <div class = "textfield">
-  <% @posts.each do |post| %>
-  <h3>Blogs </h3>
   <p id = "title"><%= post.title %></p>
   <p id = "body"><%= post.body %></p>
 
-  <% if post.category %> 
+  <% if post.category %>
   <%= post.category.category %>
   <% end %>
 
-  <% end %>
 </div>
-<br>
+<% end %>

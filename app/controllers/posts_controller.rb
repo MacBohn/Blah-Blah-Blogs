@@ -1,6 +1,10 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    if params[:category_id]
+      @posts = Post.where(:category_id => params[:category_id])
+    else
+      @posts = Post.all
+    end
     @post =Post.new
   end
 
