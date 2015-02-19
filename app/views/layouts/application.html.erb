@@ -37,10 +37,10 @@
     </div>
     <br>
     <% else %>
-    <h3>Nickname <%= current_user.nickname %></h3>
+    <h3> user -> <%= current_user.nickname %></h3>
     <% end %>
     <% else %>
-    <h4>NO USER LOGGED IN<h4>
+    <h4>NO USER LOGGED IN !!<h4>
       <% end %>
     </div>
     <% if notice.present? %>
@@ -58,7 +58,7 @@
   </body>
   <br>
   <footer>
-    <nav class="navbar navbar-inverse navbar-fixed">
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
       <div id="navbar" class="navbar-collapse collapse">
         <form class="navbar-form navbar">
           <%= link_to "Contact Us", contact_us_path, class: "btn btn-primary" %>
