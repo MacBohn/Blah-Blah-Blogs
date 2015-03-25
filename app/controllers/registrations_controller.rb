@@ -8,7 +8,7 @@ class RegistrationsController < ApplicationController
       session[:user_id] = @user.id
       redirect_to root_path, notice: "User was successfully created"
     else
-      render signup_path
+      redirect_to sign_up_path, notice: "All fields are required with correct information"
     end
   end
 

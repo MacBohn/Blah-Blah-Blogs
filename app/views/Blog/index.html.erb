@@ -3,12 +3,18 @@
   <%= form_for @post do |f| %>
   <h2>Post a Blog</h2>
   <h4><%= f.label :category_id %></h4>
-  <%= f.collection_select(:category_id, Category.all, :id, :category, {include_blank: "Please choose a category" }, {class: "form-control"}) %>
+  <div class="form-group">
+    <%= f.collection_select(:category_id, Category.all, :id, :category, {include_blank: "Please choose a category" }, {class: "form-control select-field"}) %>
+  </div>
   <br>
   <h4><%= f.label :title %></h4>
-  <%= f.text_area :title, :rows => 1, :cols => 75, :placeholder => "The Title of your Blog goes here" %>
+  <div class="form-group">
+    <%= f.text_field :title, :rows => 1, :cols => 75, :placeholder => "The Title of your Blog goes here" %>
+  </div>
   <h4><%= f.label :body %></h4>
-  <%= f.text_area :body, :rows => 10, :cols => 75, :placeholder => "Your contnet of your Blog goes here" %>
+  <div class="form-group">
+    <%= f.text_area :body, :rows => 10, :cols => 75, :placeholder => "Your content of your Blog goes here" %>
+  </div>
   <br><br>
   <%= f.submit "Submit", class: "css_button" %>
   <% end %>

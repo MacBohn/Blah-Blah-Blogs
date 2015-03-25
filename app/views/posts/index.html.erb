@@ -9,14 +9,12 @@
 </div>
 
 
-<% @posts.each do |post| %>
+<% @posts.reverse_each do |post| %>
 <div class = "textfield3">
   <p id = "title"><%= post.title %></p>
   <p id = "body"><%= post.body %></p>
 
-  <% if post.category %>
   <%= post.category.category %>
-  <% end %>
 
 </div>
 <% end %>

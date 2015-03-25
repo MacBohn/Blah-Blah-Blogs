@@ -12,7 +12,7 @@ class AuthenticationsController < ApplicationController
       session[:user_id] = user.id
     else
       session[:user_id] = user.id
-    end
+    end 
 
     redirect_to root_path, notice: 'Your Twitter account was successfully Signed In.'
 

@@ -13,5 +13,5 @@
     <%= f.submit "Submit", class: "css_button" %>
   <% end %>
   <h2>Or</h2>
-  <h2 id="sign"><%= link_to "Sign In with Twiter", "/auth/twitter" %></h2>
+  <h2><%= button_to "Sign In with Twitter", "/auth/twitter", :id => "sign", :method => :post %></h2>
 </div>
