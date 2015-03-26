@@ -24,8 +24,14 @@ h4{
   color: white;
 }
 
-h5{
+h5 a{
   font-size: 20px;
+  color: black;
+}
+
+h5 a:hover{
+  font-size: 20px;
+  color: grey;
 }
 .navbar-inverse{
   border: 2px solid white;
