@@ -119,8 +119,14 @@ ul{
   background: black;
 }
 body{
-  background: #209AB3;
+  background-image: url('http://www.wallpaper4me.com/images/wallpapers/weedplant-482554.jpeg');
+  background-repeat: no-repeat;
+  background-size: 1300px 756px;
 
+}
+
+label{
+  color: white;
 }
 .textfield{
   border-radius: 5px;
@@ -128,8 +134,7 @@ body{
   margin-right: 250px;
   margin-bottom: 50px;
   padding: 20px 40px;
-  border: 2px solid white;
-  background: green;
+  background: transparent;
 }
 
 .textfield1{
