@@ -29,13 +29,9 @@ h5 a{
   color: black;
 }
 
-h5 a:hover{
-  font-size: 20px;
-  color: grey;
-}
 .navbar-inverse{
   border: 2px solid white;
-  background: #C46A1B;
+  background: black;
 }
 
 .twitter{
@@ -54,7 +50,14 @@ form{
 .btn{
   font-family: cursive;
   font-size: 20px;
+  background: green;
+  font-color: white;
+  border: black;
+}
+
+.btn:hover{
   background: black;
+  border: none;
 }
 p{
   text-align: center;
@@ -68,7 +71,6 @@ p{
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 5px;
-  border: 2px solid white;
   background: black;
 }
 
@@ -127,7 +129,7 @@ body{
   margin-bottom: 50px;
   padding: 20px 40px;
   border: 2px solid white;
-  background: orange;
+  background: green;
 }
 
 .textfield1{
@@ -162,7 +164,19 @@ body{
   border: 2px solid black;
   padding: 10px;
   border-radius: 10px;
-  background: black;
+  background: green;
+  font-family: cursive;
+}
+
+.navbar-inverse .navbar-brand{
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color:white;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  background: green;
   font-family: cursive;
 }
 

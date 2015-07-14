@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BlahBlahBlogs</title>
+  <title>Nug Alert</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -9,7 +9,7 @@
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header-center">
-        <a class="navbar-brand", <%= link_to "Blah Blah Blogs", root_path %></a>
+        <a class="navbar-brand", <%= link_to "Nug Alert", root_path %></a>
 
       </div>
       <div id="navbar" class="navbar-collapse collapse">
@@ -29,7 +29,7 @@
 
   <br><br><br>
   <div class="menu">
-    <h1>Blah Blah Blogs</h1>
+    <h1>Nug Alert</h1>
     <% if current_user != nil %>
     <% if Authentication.find_by(:user_id => current_user.id) %>
     <div class="twitter">
