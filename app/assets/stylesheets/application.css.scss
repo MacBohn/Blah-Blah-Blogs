@@ -6,7 +6,7 @@ h1{
   color: white;
   font-size: 50px;
   text-align: center;
-  font-family: ;
+  font-family: cursive;
 }
 h2{
   color: black;
@@ -30,8 +30,8 @@ h5 a{
 }
 
 .navbar-inverse{
-  border: 2px solid white;
-  background: black;
+  border: 2px solid transparent;
+  background: transparent;
 }
 
 .twitter{
@@ -74,8 +74,6 @@ p{
   font-color: white;
   margin-left: 20px;
   margin-right: 20px;
-  border-radius: 5px;
-  background: black;
 }
 
 ul{
@@ -113,19 +111,17 @@ ul{
   font-size: 24px;
   font-family: Comic Sans MS;
   border-radius: 16px 16px 16px 16px;
-  border: 3px solid white;
+  border: 3px solid transparent;
   padding: 9px 24px;
   text-shadow: 1px 1px 0px white;
-  box-shadow: inset 1px 1px 0px 0px #209AB3;
-  cursor: pointer;
   color: white;
   display: inline-block;
-  background: black;
+  background: transparent;
 }
 body{
   background-image: url('http://www.wallpaper4me.com/images/wallpapers/weedplant-482554.jpeg');
   background-repeat: no-repeat;
-  background-size: 1300px 756px;
+  background-size: 1300px 956px;
 
 }
 
@@ -139,6 +135,8 @@ label{
   margin-bottom: 50px;
   padding: 20px 40px;
   background: transparent;
+  font-size: 24px;
+  font-family: Comic Sans MS;
 }
 
 .textfield1{

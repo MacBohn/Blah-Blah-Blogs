@@ -6,7 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-inverse navbar">
     <div class="container">
       <div class="navbar-header-center">
         <a class="navbar-brand", <%= link_to "Nug Alert", root_path %></a>
@@ -58,9 +58,9 @@
   </body>
   <br>
   <footer>
-    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <nav class="navbar navbar-inverse navbar">
       <div id="navbar" class="navbar-collapse collapse">
-        <form class="navbar-form navbar">
+        <form class="navbar-form navbar-fixed-bottom">
           <%= link_to "Contact Us", contact_us_path, class: "btn btn-primary" %>
           <%= link_to "About Us", about_us_path, class: "btn btn-primary" %>
         </form>
