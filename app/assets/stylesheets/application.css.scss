@@ -64,9 +64,7 @@ p{
   font-size: 30px;
   color: white;
 }
-.about-links a{
-  color: white;
-}
+
 
 .menu {
   margin-top: 30px;
@@ -121,12 +119,12 @@ ul{
 body{
   background-image: url('http://www.wallpaper4me.com/images/wallpapers/weedplant-482554.jpeg');
   background-repeat: no-repeat;
-  background-size: 1440px 956px;
+  background-size: cover;
 
 }
 
 label{
-  color: white;
+  color: black;
 }
 .textfield{
   border-radius: 5px;
@@ -134,9 +132,10 @@ label{
   margin-right: 250px;
   margin-bottom: 50px;
   padding: 20px 40px;
-  background: transparent;
+  background: white;
   font-size: 24px;
   font-family: Comic Sans MS;
+  color: black;
 }
 
 .textfield1{
@@ -265,23 +264,17 @@ label{
   }
 
 h2, a{
-  color: white;
+  color: black;
 }
 h2, a:hover{
-  color: white;
+  color: black;
 }
 
 .select-field{
   width: 100%;
 }
 
-.about-links a{
-  color: black;
-}
 
-.about-links a:hover{
-  color: grey;
-}
 
   /*
   * This is a manifest file that'll be compiled into application.css, which will include all the files
